@@ -1,0 +1,673 @@
+/* إعدادات الموقع الأساسية */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf8f2;
+    color: #243b40;
+    line-height: 1.9;
+}
+
+/* شريط التنقل Navigation Bar */
+
+header {
+    background-color: #102d35;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #dfc18a;
+    direction: ltr;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: #102d35;
+    padding: 15px 20px;
+    width: 100%;
+    min-height: 55px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #dfc18a;
+}
+
+/* الواجهة الرئيسية Hero Section */
+
+.hero {
+    min-height: 600px;
+
+    background:
+        linear-gradient(rgba(10, 35, 42, 0.65),
+            rgba(10, 35, 42, 0.65)),
+        url("https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=1800");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.english-title {
+    color: #dfc18a;
+    letter-spacing: 4px;
+    direction: ltr;
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 15px 0;
+    color: #ffffff;
+}
+
+.hero h2 {
+    font-size: 27px;
+    color: #dfc18a;
+    margin-bottom: 20px;
+    direction: ltr;
+}
+
+.hero p {
+    margin: 12px 0;
+    font-size: 17px;
+}
+
+/* زر استكشاف الموقع */
+
+.main-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background-color: #dfc18a;
+    color: #102d35;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    background-color: white;
+    transform: translateY(-4px);
+}
+
+/* المقدمة */
+
+.intro {
+    text-align: center;
+    padding: 75px 10%;
+}
+
+.intro h2,
+.destinations h2 {
+    color: #173943;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.intro h3,
+.destinations h3 {
+    color: #b18b4b;
+    margin-bottom: 20px;
+}
+
+/* الوجهات السياحية */
+
+.destinations {
+    text-align: center;
+    padding: 70px 10%;
+    background-color: #f0eee7;
+}
+
+.destinations ul {
+    display: inline-block;
+    text-align: right;
+    background-color: white;
+    padding: 25px 50px;
+    border-right: 4px solid #dfc18a;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.destinations li {
+    padding: 8px;
+}
+
+.destinations a {
+    display: block;
+    color: #a47c39;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.destinations a:hover {
+    color: #173943;
+    text-decoration: underline;
+}
+
+/* التذييل Footer */
+
+footer {
+    background-color: #102d35;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+footer h2 {
+    color: #dfc18a;
+    margin-bottom: 10px;
+}
+
+/* تصميم الهاتف */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .intro,
+    .destinations {
+        padding: 45px 6%;
+    }
+}
+
+/* Countries Page */
+
+.page-heading {
+    background-color: #173943;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.page-heading p:first-child {
+    color: #dfc18a;
+    letter-spacing: 3px;
+    direction: ltr;
+}
+
+.page-heading h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.page-heading h2 {
+    color: #dfc18a;
+    font-size: 23px;
+}
+
+.country-links {
+    text-align: center;
+    padding: 45px 20px;
+    background-color: #f0eee7;
+}
+
+.country-links ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.country-links a {
+    display: block;
+    background-color: #173943;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.country-links a:hover {
+    background-color: #b18b4b;
+}
+
+.country-detail {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 55px 8%;
+    background-color: #faf8f2;
+    border-bottom: 1px solid #e5dfd1;
+}
+
+.country-detail:nth-of-type(even) {
+    background-color: #f0eee7;
+}
+
+.country-detail img {
+    width: 42%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.country-detail div {
+    flex: 1;
+}
+
+.country-detail h2 {
+    color: #173943;
+    margin-bottom: 5px;
+}
+
+.country-detail h3 {
+    color: #b18b4b;
+    direction: ltr;
+    margin-bottom: 15px;
+}
+
+.country-detail p {
+    margin: 10px 0;
+}
+
+.country-detail a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #a47c39;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.country-detail a:hover {
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 700px) {
+
+    .country-detail {
+        flex-direction: column;
+        padding: 35px 6%;
+    }
+
+    .country-detail img {
+        width: 100%;
+        height: 230px;
+    }
+
+    .page-heading h1 {
+        font-size: 27px;
+    }
+
+    .country-links ul {
+        flex-direction: column;
+    }
+}
+
+/* Tourist Attractions Page */
+
+.attraction-links {
+    background: #ffffff;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.attraction-links ul {
+    line-height: 2.2;
+}
+
+.attraction-links a {
+    color: #176b65;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.attraction-card {
+    background: #ffffff;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    scroll-margin-top: 20px;
+}
+
+.attraction-card h2 {
+    color: #176b65;
+}
+
+.attraction-card img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 15px 0;
+}
+
+.attraction-card p {
+    line-height: 1.9;
+}
+
+.attraction-card ol,
+.attraction-card ul {
+    line-height: 2;
+}
+
+.attraction-card a {
+    display: inline-block;
+    background: #176b65;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 7px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.attraction-card a:hover {
+    background: #104b47;
+}
+
+.back-to-top {
+    text-align: center;
+    margin: 30px;
+}
+
+@media (max-width: 600px) {
+    .attraction-card {
+        padding: 15px;
+    }
+
+    .attraction-card img {
+        max-height: 250px;
+    }
+}
+
+/* European Food Page */
+
+.food-heading {
+    background-color: #173943;
+    color: white;
+    text-align: center;
+    padding: 65px 8%;
+}
+
+.food-heading p:first-child {
+    color: #dfc18a;
+    letter-spacing: 3px;
+    direction: ltr;
+}
+
+.food-heading h1 {
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.food-heading h2 {
+    color: #dfc18a;
+}
+
+.food-heading p {
+    margin: 10px 0;
+}
+
+.food-menu {
+    background: #f0eee7;
+    padding: 35px 15px;
+    text-align: center;
+}
+
+.food-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.food-menu a {
+    display: block;
+    background: #173943;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.food-menu a:hover {
+    background: #b18b4b;
+}
+
+.food-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 45px 8%;
+    background: #faf8f2;
+    border-bottom: 1px solid #e5dfd1;
+}
+
+.food-card:nth-of-type(even) {
+    background: #f0eee7;
+}
+
+.food-card img {
+    width: 40%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.food-card div {
+    flex: 1;
+}
+
+.food-card h2 {
+    color: #173943;
+}
+
+.food-card h3 {
+    color: #b18b4b;
+    margin: 10px 0;
+}
+
+.food-card p {
+    margin: 10px 0;
+}
+
+.food-table {
+    padding: 65px 7%;
+    text-align: center;
+}
+
+.food-table h3 {
+    color: #b18b4b;
+    margin-bottom: 25px;
+}
+
+.food-table table {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    direction: ltr;
+}
+
+.food-table th {
+    background: #173943;
+    color: white;
+}
+
+.food-table th,
+.food-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.food-table tr:nth-child(even) {
+    background: #f0eee7;
+}
+
+@media (max-width: 700px) {
+
+    .food-card {
+        flex-direction: column;
+        padding: 30px 6%;
+    }
+
+    .food-card img {
+        width: 100%;
+        height: 230px;
+    }
+
+    .food-heading h1 {
+        font-size: 27px;
+    }
+
+    .food-menu ul {
+        flex-direction: column;
+    }
+
+    .food-table table {
+        font-size: 12px;
+    }
+
+    .food-table th,
+    .food-table td {
+        padding: 8px 4px;
+    }
+}
+
+/* Gallery Page */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.gallery figure {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    margin: 0;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery figcaption {
+    padding: 14px;
+    color: #123b45;
+    font-weight: bold;
+}
+
+/* Contact Information */
+.contact-info {
+    background-color: #fff;
+    padding: 25px;
+    margin: 25px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.contact-info p {
+    line-height: 2;
+}
+
+main section ul li {
+    margin: 12px 0;
+}
+
+main section ul li a {
+    color: #123b45;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main section ul li a:hover {
+    color: #b89555;
+    text-decoration: underline;
+}
+
+.media-section video {
+    width: 70%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.country-video {
+    width: 450px;
+    height: 253px;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+    margin: 20px auto;
+    display: block;
+}
+
+.media-section audio {
+    width: 70%;
+    max-width: 450px;
+    margin: 15px auto;
+    display: block;
+}
